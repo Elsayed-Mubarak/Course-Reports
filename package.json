@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-mongo-coursetracker",
+  "version": "1.0.0",
+  "description": "Mongo Course Tracker",
+  "author": "Devskiller",
+  "private": true,
+  "scripts": {
+    "test": "babel-node test",
+    "test:watch": "chokidar \"**/*.js\" -c \"npm test\" --silent --initial --ignore node_modules"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.9.0",
+    "chokidar-cli": "2.1.0",
+    "jasmine": "3.5.0",
+    "jasmine-reporters": "2.3.2",
+    "mongodb-memory-server": "^6.5.1"
+  },
+  "dependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/mongodb": "^3.5.5",
+    "mongodb": "^3.5.5"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "4.2.8"
+    }
+  }
+}
